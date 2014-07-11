@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>reveal.js - The HTML Presentation Framework</title>
+    <meta name="description" content="System Development Group Meeting">
+    <meta name="author" content="Satoshi Ueno">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../reveal.js/css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="../css/slide.css">
+
+    <script>
+      if(window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal.js/css/print/pdf.css';
+        document.getElementsByTagname("head")[0].appendChild(link);
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides" >
+
+        <section data-markdown="md/slide.md" data-separator="\n\n[\s]*-----\n" data-vertical="^\n\n[\s]*--\n">
+        </section>
+
+      </div>
+      <div class="progress"><span></span></div>
+
+    </div>
+
+    <script src="../reveal.js/lib/js/head.min.js"></script>
+    <script src="../reveal.js/js/reveal.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        width: 960,
+        heigth: 700,
+
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'default',
+        dependencies: [
+        { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; }},
+        { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); }},
+        { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); }},
+        { src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+        { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; }},
+        {src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; }}
+        ]
+      });
+    </script>
+  </body>
+</html>
