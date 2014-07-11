@@ -6,7 +6,7 @@
 スライドへのリンク
 
 - revealjsスライド
-    + [Git入門勉強会](gitStudyMeeting/slide.html)
+    + [Git入門勉強会](http://piyoshi.github.io/LabStudyMeetingSlides/gitStudyMeeting/slide.html)
 
 <br />
 
