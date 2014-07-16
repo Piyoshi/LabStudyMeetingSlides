@@ -11,7 +11,7 @@
 <br />
 
 - GitHubのMarkdown
-    + [Git入門勉強会](gitStudyMeeting/md/slide.md)
+    + [Git入門勉強会](gitStudyMeeting/slide.md)
 
 
 
